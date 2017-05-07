@@ -1,0 +1,12 @@
+Configuration:
+  Appenders:
+    Console:
+          name: console
+          PatternLayout:
+            Pattern: '%d %p %c{1.} [%t] %m%n'
+          target: SYSTEM_OUT
+  Loggers:
+    Root:
+      level: info
+      AppenderRef:
+        - ref: console
